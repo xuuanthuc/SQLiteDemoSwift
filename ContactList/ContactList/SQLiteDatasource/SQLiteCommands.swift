@@ -1,13 +1,11 @@
-//
-//  SQLiteCommands.swift
-//  ContactList
-//
-//  Created by Niso on 1/26/21.
-//
+
 
 import Foundation
 import SQLite
 
+
+
+// file xử lý các sự kiện thêm sửa xoá db
 class SQLiteCommands {
     
     static var table = Table("contact")
@@ -21,13 +19,13 @@ class SQLiteCommands {
     
     // Creating Table
     static func createTable() {
-        guard let database = SQLiteDatabase.sharedInstance.database else {
+        guard let database = SQLiteDatabase.sharedInstance.database else { //connect failed
             print("Datastore connection error")
             return
         }
         
         do {
-            // ifNotExists: true - Will NOT create a table if it already exists
+            // ifNotExists: true - Sẽ KHÔNG tạo một bảng mới nếu nó đã tồn tại
             try database.run(table.create(ifNotExists: true) { table in
                 table.column(id, primaryKey: true)
                 table.column(firstName)

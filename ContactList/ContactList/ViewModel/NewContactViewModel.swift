@@ -1,9 +1,4 @@
-//
-//  NewContactViewModel.swift
-//  ContactList
-//
-//  Created by Niso on 1/26/21.
-//
+
 
 import UIKit
 
@@ -19,7 +14,6 @@ class NewContactViewModel {
     
     init(contactValues: Contact?) {
         self.contactValues = contactValues
-        
         self.id = contactValues?.id
         self.firstName = contactValues?.firstName
         self.lastName = contactValues?.lastName

@@ -1,9 +1,3 @@
-//
-//  ContactScreenTableViewController.swift
-//  ContactList
-//
-//  Created by Niso on 1/27/21.
-//
 
 import UIKit
 
@@ -49,6 +43,7 @@ class ContactScreenTableViewController: UITableViewController {
     }
     
     // Delete cell from table
+//    kéo từ phải qua trái để xoá
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let contact = viewModel.cellForRowAt(indexPath: indexPath)

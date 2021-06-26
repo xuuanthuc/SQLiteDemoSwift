@@ -1,13 +1,7 @@
-//
-//  AppDelegate.swift
-//  ContactList
-//
-//  Created by Niso on 1/26/21.
-//
 
 import UIKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
